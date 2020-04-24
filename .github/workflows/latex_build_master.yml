@@ -17,7 +17,12 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: cvHangZhang.tex
-
+          
+      - name: Move File
+        run: |
+          mkdir build
+          mv cvHangZhang.pdf build/
+        
       # https://github.com/marketplace/actions/github-pages
       - name: Deploy
         if: success()
@@ -25,5 +30,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          build_dir: ./
+          build_dir: build/
           target_branch: gh-pages
