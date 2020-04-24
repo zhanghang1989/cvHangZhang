@@ -1,0 +1,265 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+
+\documentclass{resume} % Use the custom resume.cls style
+%\usepackage{hyperref}
+%\usepackage{geometry}
+\usepackage{listliketab}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{comment}
+\usepackage{natbib}
+\usepackage{bibentry}
+\usepackage[table]{xcolor}
+\usepackage{xcolor,colortbl}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+\definecolor{TableRed}{HTML}{800000}
+\newcommand{\TextRed}[1]{\textcolor{TableRed}{#1}}
+
+\name{Hang Zhang} % Your name
+
+\address{ zhanghang0704@gmail.com }
+\address{+1(732)~543~$\cdot$~4857\\ \url{https://hangzhang.org}}
+% \address{ zhang.hang@rutgers.edu \\ \url{http://hangzh.com}} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+\begin{rSection}{Education}
+
+{\bf Rutgers University} \hfill {\em Oct 2017} \\
+Ph.D. in Electrical and Computer Engineering \\
+%Minor in Linguistics
+%\smallskip
+Thesis Advisor: Prof. Kristin Dana \\
+Research Interest: Computer Vision\\
+Current GPA: 3.9/4.0
+%\smallskip
+
+{\bf Southeast University (Nanjing, China)} \hfill {\em June 2013} \\
+B.S. in School of Automation \\
+Advisor: Junyang - Li \\
+%Thesis: ``Road Lane Detection and Road Surface Identification under Complicated Conditions'' \\
+ {\it Outstanding Undergraduate Thesis 2013} - School of Automation, Southeast University% award for best thesis in the department.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Amazon AI}{\em Jan 2018 - Now}{Applied Scientist \RNum{2} }{East Palo Alto, CA}
+\item Working with Dr.~Mu Li and Dr.~Alex Smola in Amazon AI, developing state-of-the-art computer vision algorithms.
+\end{rSubsection}
+
+\begin{rSubsection}{Rutgers University}{\em Jan 2014 - Oct 2017}{Research and Teaching Assistant}{New Brunswick, NJ}
+\item Material and texture modeling using deep learning algorithms. PhD Advisor: Prof. Kristin Dana
+\end{rSubsection}
+
+\begin{rSubsection}{Amazon Lab 126}{\em May 2017 - Aug 2017}{Applied Scientist Intern}{Cupertino, CA}
+\item Worked with CV Algorithm team on state-of-the-art semantic segmentation research for Home AI. 
+\end{rSubsection}
+
+\begin{rSubsection}{NVIDIA}{\em May 2016 - Aug 2016}{Deep learning Research Intern}{Holmdel, NJ}
+\item Worked with Autonomous Driving team, exploring end-to-end self-driving solution. 
+\end{rSubsection}
+
+\begin{rSubsection}{Southeast University}{\em Jun 2012 - Jun 2013}{Research Assistant}{Nanjing, China}
+\item %Monocular vision road recognition research based on the road surface texture features for complex urban roads.
+Road segmentation and lane detection in complicated scene. (Advisor: Prof. Junyang Li)
+\end{rSubsection}
+
+\end{rSection}
+
+
+\begin{rSection}{Technical Awards}
+{\bf Doctoral Consortium Award} (CVPR 2017) \hfill {2017} \\
+{\bf TA/GA Professional Development Fund Award} (Rutgers) \hfill {2016}\\ 
+{\bf Outstanding Undergraduate Thesis Award} (SEU, China) \hfill {2013}\\
+{\bf Grant of Phoenix Contact} (SEU, China) \hfill {2012} \\
+{\bf RoboCup: Robotics Navigation Competition 2nd Place Award} (SEU, China) \hfill {2012}
+
+\end{rSection}
+
+\begin{rSection}{Technical Strengths}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Interested Area &  Deep Learning, Computer Vision. \\
+Programming Languages & C++, CUDA, Python, Lua, Matlab \\
+Deep Learning Toolbox & PyTorch, MXNet,  Torch\\ 
+
+\end{tabular}
+
+\newpage
+
+\end{rSection}
+
+%----------------------
+\begin{rSection}{Teaching Experience}
+\begin{rSubsection}{Computer Architecture \& Assembly Language Lab}{Spring 2016\&17}{Teaching Assistant}{}
+\item
+Assisted in teaching Computer Architecture and Assembly Language Lab, including revising lab tutorials, managing course website, supervising the experiments and grading the lab reports. 
+\end{rSubsection}
+\begin{rSubsection}{Robotics \& Computer Vision}{Fall 2014}{Teaching Assistant}{}
+\item
+Assisted in teaching the Robotics and Computer Vision class under the supervision of Prof. Kristin Dana. This course includes common computer vision techniques such as image transformations, RANSAC, camera calibration, motion detection, and face recognition.
+\end{rSubsection}
+
+\end{rSection}
+
+
+\nobibliography{my}
+\bibliographystyle{plain}
+%\bibliographystyle{ieeetr}
+\begin{rSection}{Publications}
+\begin{enumerate}
+
+
+\item \bibentry{Zhang_2019_CVPR}
+
+\item \bibentry{Xie2018bags}
+
+\item \bibentry{Lin2019elastic}
+
+\item \bibentry{guo2019gluoncv}
+
+\item\bibentry{kaur2017Photo}
+
+\item \bibentry{Zhang_2018_CVPR}
+
+\item \bibentry{xue18CVPR}
+
+\item\bibentry{zhang17ICCV}
+
+\item \bibentry{zhang2017thesis}
+
+\item \bibentry{zhang17CVPR}
+
+\item \bibentry{xue17CVPR}
+
+
+\item \bibentry{zhang16CVPR}
+
+\item \bibentry{zhang2015reflectance}
+
+\end{enumerate}
+\end{rSection}
+
+\begin{comment}
+\begin{rSection}{On-going Projects}
+
+{\bf Deep TEN: Texture Encoding Network} \hfill{CVPR 2017}\\
+We introduce the {\it Encoding Layer} built on top of the convolutional layers,
+which ports the whole dictionary learning and encoding pipeline 
+into a single CNN layer. The Encoding Layer leverages the classic computer vision
+approaches and CNN framework, which makes the CNN architecture more flexible by
+allowing arbitrary input image sizes. 
+In addition, the Encoding Layer learns an inherent dictionary and 
+the encoding
+representation which is likely to carry domain-specific information and 
+makes the learned convolutional features generic and easier to transfer. 
+Our approach achieves state-of-the-art results on golden standard material/texture
+recognition datasets.
+
+{\bf Differential Imaging for Material Recognition} \hfill{CVPR 2017}\\
+We build a large-scale material database, 
+Ground Terrain in Outdoor Scenes (GTOS) database. The database consists of over 30,000 images covering 40 classes of outdoor ground terrain under varying weater and lighting conditions. We develop a novel approach for material recognition called a Differential Angular Imaging Network (DAIN) to fully leverage this large dataset utilizing angular and spatial gradients of appearance.
+Our results show that DAIN achieves recognition performance that surpasses single view or coarsely quantized multiview images. 
+
+{\bf MatCam Project} \hfill{ECCV 2016 \& CVPR 2015}\\
+%We go beyond the question of recognition and labeling and ask the question: What intrinsic physical properties of the surface can be estimated using reflectance? We show a framework that enables prediction of actual friction values for surfaces using one-shot reflectance measurement. This work is a first of its kind vision-based friction estimation. 
+%{\bf Reflectance Hashing for Material Recognition} \hfill{CVPR 2015} \\
+Reflectance offers a unique signature of the material but is challenging to measure and use for recognizing materials due to its high-dimensionality. We introduce a one-shot in-field reflectance capture and build compact binary reflectance code for fast retrieval. We demonstrate the effectiveness of reflectance hashing for material recognition with a number of real-world materials.
+
+\end{rSection}
+
+\end{comment}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+%--------------------------------
+
+%\newpage
+
+\begin{rSection}{Professional Services}
+{\bf Workshop and Tutorial Committee} \\
+{\it European Conference on Computer Vision} (ECCV) \hfill{Glasgow, 2020}\\
+From HPO to NAS: Automatic Deep Learning. \\
+
+{\it IEEE Conference on Computer Vision and Pattern Recognition} (CVPR) \hfill{Seattle, 2020}\\
+From HPO to NAS: Hands-on Tutorial on Automatic Deep Learning. \\
+
+{\it IEEE International Conference on Computer Vision} (ICCV) \hfill{Seoul, 2019}\\
+Everything You Need to Know to Reproduce SOTA Deep Learning Models: \\
+Hands-on Tutorial for Training SOTA Computer Vision Models. \\
+
+{\it Amazon Machine Learning Conference} (AMLC) \hfill{Seattle, 2018}\\
+CNNs for Semantic Segmentation. 
+
+{\bf Reviewer for Journals:} \\
+{\it IEEE Transactions on Pattern Analysis and Machine Intelligence} (TPAMI) \\
+{\it IEEE Transactions on Biomedical Circuits and Systems} (TbioCAS) \\
+{\it Computer Vision and Image Understanding} (CVIU)
+
+{\bf Program Committee and Reviewer for Conferences:} \\
+{\it IEEE Conference on Computer Vision and Pattern Recognition} (CVPR) \hfill{2018, 2019}\\
+{\it IEEE International Conference on Computer Vision} (ICCV)  \hfill{2019}\\
+{\it European Conference on Computer Vision} (ECCV) \hfill{2018}\\
+{\it IEEE Winter Conference on Applications of Computer Vision} (WACV)  \hfill{2018}\\
+SIGGRAPH  \hfill{2018}
+
+
+\end{rSection}
+
+
+\begin{comment}
+\begin{rSection}{Relevant Course Work}
+\begin{longtable}{p{0.8 in}|p{4.5in}p{1 in}}
+	Fall 2015 & COMPUTER ARCHITECTURE &(16:332:563)\\
+  	   & LINEAR ALGEBRA \& APPLICATIONS &(16:642:550)\\
+    Spring 2015 & CONVEX OPTIMIZATION &(16:332:509)\\
+    Fall 2014 & PATTERN RECOGNITION &(16:198:535)\\
+  	   & PARALLEL \& DISTRIBUTED COMPUTING &(16:332:566)\\
+	Spring 2014 & ROBUST COMPUTER VISION &(16:332:570)\\
+  	   & SOFTWARE ENGINEERING II &(16:332:568)\\
+  	   & DATA STRUCTURE \& ALGORITHMS &(16:332:573)\\ 	  Fall 2013  & MACHINE VISION &(16:332:561)\\
+  	   & PROGRAMMING FINANCE &(16:332:503)\\
+       & SYSTEM ANALYSIS &(16:332:501)\\
+  
+\end{longtable}
+\end{rSection}
+
+\begin{rSection}{Reference}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Kristin Dana &  Professor\\
+ & Department of Electrical and Computer Engineering \\
+ & Rutgers University\\ 
+ & kdana@ece.rutgers.edu \\
+& \\
+Ko Nishino &  Professor  \\
+ & Department of Computer Science \\
+ & Drexel University\\ 
+ & kon@drexel.edu\\
+\end{tabular}
+
+\end{rSection}
+\end{comment}
+
+\end{document}
