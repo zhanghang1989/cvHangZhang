@@ -38,12 +38,16 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{About Me}
-I am Hang Zhang, a Research Scientist at Facebook. 
-Before joining FB, I also worked/interned with Amazon and NVIDIA. 
-My recent work of {\bf ResNeSt} achieves superior performance on ImageNet and significantly boosts the performance on many downstream applications when serving as the backbone network. ResNeSt achieves state-of-the-art results in object detection and instance segmentation on MS-COCO dataset, and semantic segmentation on ADE20K and Cityscapes datasets.
+I am Hang Zhang, a Staff Research Scientist at Meta Reality Lab (Facebook). 
+I am leading the effort in building a generic and scalable architecture optimization platform for AI products (known as FBNAS). The system serves for various production models for IG, Portal and VR headsets in person understanding, AR/VR  rendering and Ads ranking. 
 
-I am also enthusiastic in contributing to open source projects. I am the designer and creator for AutoGluon Toolkit, PyTorch Encoding Toolkit. I am also a co-creator for GluonCV Toolkit and contribute frequently to Apache MXNet. I have organized {\it ``Everything you need to know to reproduce SoTA deep learning models''} in ICCV 2019.
-I am organizing a tutorial series on {\it``From HPO to NAS: Automated Deep Learning''} on CVPR 2020 and ECCV 2020. 
+Before joining Meta, I was a Senior Applied Scientist in Amazon AI, where I worked on computer vision, deep learning and MXNet framework. We built ResNeSt which achieved state-of-the-arts results on several major computer vision tasks.
+
+% My research interests include neural architecture search, large scale image classification and segmentation. 
+
+I am also enthusiastic in contributing to open source projects, including \href{https://github.com/facebookresearch/d2go}{D2Go}, \href{https://github.com/facebookresearch/detectron2}{Detectron2}, \href{https://github.com/awslabs/autogluon/}{AutoGluon}, \href{https://github.com/zhanghang1989/PyTorch-Encoding}{PyTorch Encoding} and \href{https://github.com/dmlc/gluon-cv}{GluonCV}. More about me:
+%I have organized {\it ``Everything you need to know to reproduce SoTA deep learning models''} in ICCV 2019.
+%I have organized a tutorial series on {\it``From HPO to NAS: Automated Deep Learning''} on CVPR20 and ECCV20. 
 
 
 [\href{https://hangzhang.org/}{Homepage}] [\href{https://github.com/zhanghang1989}{GitHub}] 
@@ -59,13 +63,16 @@ I am organizing a tutorial series on {\it``From HPO to NAS: Automated Deep Learn
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Facebook}{\em Nov 2020 - Now}{Senior Research Scientist}{Menlo Park, CA} %\RNum{2} 
-\item Developing efficient model for mobile devices.
+\begin{rSubsection}{Meta Reality Lab (Facebook)}{\em Nov 2020 - Now}{Research Scientist}{Menlo Park, CA} %\RNum{2} 
+\item Lead the development of FBNAS project, a unified pipeline for cross-platform hardware-aware model optimization. FBNAS has been applied to several production models in person understanding on IG, AR/VR applications and Ads models, and achieved significant improvements. (Open sourcing soon).
+\item Developed and open sourced D2Go toolkit, bringing Detectron2 to mobile [\href{https://ai.facebook.com/blog/d2go-brings-detectron2-to-mobile/}{post}]
+\item Research on efficient architectures, e.g. \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&sortby=pubdate&citation_for_view=gCoWdkUAAAAJ:ML0RJ9NH7IQC}{FBNetV5}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&sortby=pubdate&citation_for_view=gCoWdkUAAAAJ:p__nRnzSRKYC}{ScaleViT}. Organizing workshop on ``Computer Vision for MetaVerse" in ECCV2022.
 \end{rSubsection}
 
-\begin{rSubsection}{Amazon}{\em Jan 2018 - Oct 2020}{Senior Applied Scientist}{East Palo Alto, CA} %\RNum{2} 
-\item Lead the development AutoGluon -- an AutoML toolkit for deep learning. %Design and implemented the distributed and scalable hyper-parameter optimization system. Integrated advanced search algorithms including reinforcement learning, Bayesian optimization, and Hyperband scheduling.
-\item Make innovations on deep learning algorithms. %My recent work of ResNeSt achieves superior performance on ImageNet and achieves state-of-the-art results in object detection and instance segmentation on MS-COCOdataset, and semantic segmentation on ADE20K and Cityscapes datasets.
+\begin{rSubsection}{Amazon AI}{\em Jan 2018 - Oct 2020}{Senior Applied Scientist}{East Palo Alto, CA} %\RNum{2} 
+\item Lead the development of GluonCV toolkit [\href{https://cv.gluon.ai/contents.html}{link}] and AutoGluon toolkit (for AutoML) [\href{https://auto.gluon.ai/stable/index.html}{link}]. 
+\item Lead research on large scale vision solution, e.g. \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&citation_for_view=gCoWdkUAAAAJ:0KyAp5RtaNEC}{ResNeSt}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&citation_for_view=gCoWdkUAAAAJ:fEOibwPWpKIC}{Bag-of-tricks}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&citation_for_view=gCoWdkUAAAAJ:-_dYPAW6P2MC}{CFNet}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&sortby=pubdate&citation_for_view=gCoWdkUAAAAJ:35r97b3x0nAC}{dynamic SGD}. 
+\item Organized 3 tutorials on \href{https://iccv2019.thecvf.com/program/tutorials}{ICCV19}, \href{http://hangzhang.org/CVPR2020/}{CVPR20} and \href{https://hangzhang.org/ECCV2020/}{ECCV20}. 
 \end{rSubsection}
 
 % \begin{rSubsection}{Rutgers University}{\em Jan 2014 - Oct 2017}{Research and Teaching Assistant}{New Brunswick, NJ}
@@ -73,23 +80,19 @@ I am organizing a tutorial series on {\it``From HPO to NAS: Automated Deep Learn
 % \end{rSubsection}
 
 \begin{rSubsection}{Amazon Lab 126}{\em May 2017 - Aug 2017}{Applied Scientist Intern}{Cupertino, CA}
-\item Developed state-of-the-art semantic segmentation algorithm of EncNet, which is published as an oral paper (~2.1\%) in CVPR 2018. 
+\item Developed SoTA semantic segmentation algorithm of \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&sortby=pubdate&citation_for_view=gCoWdkUAAAAJ:9Nmd_mFXekcC}{EncNet} (Oral paper ($\sim$2.1\%) in CVPR 2018) [\href{https://www.youtube.com/watch?v=vAhzirU4WqA}{Link on YouTube}]
 \end{rSubsection}
 
 \begin{rSubsection}{NVIDIA}{\em May 2016 - Aug 2016}{Deep learning Research Intern}{Holmdel, NJ}
-\item Developed an end-to-end deep learning approach for autonomous driving. 
+\item Developed an end-to-end deep learning solution for autonomous driving. 
+\item Implemented Torch to Caffe model converter [\href{https://github.com/zhanghang1989/fb-caffe-exts}{GitHub}].
 \end{rSubsection}
-
-% \begin{rSubsection}{Southeast University}{\em Jun 2012 - Jun 2013}{Research Assistant}{Nanjing, China}
-% \item 
-% Road segmentation and lane detection in complicated scene. (Advisor: Prof. Junyang Li)
-% \end{rSubsection}
 
 \end{rSection}
 
 \begin{rSection}{Education}
 
-{\bf Rutgers University} \hfill {\em Oct 2017} \\
+{\bf Rutgers University} \hfill {\em 2013 - 2017} \\
 Ph.D. in Electrical and Computer Engineering \\
 %Minor in Linguistics
 %\smallskip
@@ -98,10 +101,9 @@ Research Interest: Computer Vision\\
 Current GPA: 3.9/4.0
 %\smallskip
 
-{\bf Southeast University (Nanjing, China)} \hfill {\em June 2013} \\
+{\bf Southeast University (Nanjing, China)} \hfill {\em 2009 - 2013} \\
 B.S. in School of Automation \\
-Advisor: Junyang - Li \\
-%Thesis: ``Road Lane Detection and Road Surface Identification under Complicated Conditions'' \\
+Advisor: Prof. Junyang Li \\
  {\it Outstanding Undergraduate Thesis 2013} - School of Automation, Southeast University% award for best thesis in the department.
 \end{rSection}
 
@@ -124,6 +126,10 @@ Advisor: Junyang - Li \\
 %\bibliographystyle{ieeetr}
 \begin{rSection}{Publications}
 \begin{enumerate}
+
+\item \bibentry{li2021investigation}
+
+\item \bibentry{wu2021fbnetv5}
 
 \item \bibentry{zhang2020resnest}
 
@@ -162,11 +168,12 @@ Advisor: Junyang - Li \\
 
 
 \begin{rSection}{Technical Awards}
+{\bf Amazon Off-cycle Research Grant} \hfill {2019} \\
 {\bf Doctoral Consortium Award} (CVPR 2017) \hfill {2017} \\
 {\bf NVIDIA Hardware Grant} \hfill{2016} \\
 {\bf TA/GA Professional Development Fund Award} (Rutgers) \hfill {2016}\\ 
 {\bf Outstanding Undergraduate Thesis Award} (SEU, China) \hfill {2013}\\
-{\bf Grant of Phoenix Contact} (SEU, China) \hfill {2012} \\
+{\bf Phoenix Contact Fellowship} (SEU, China) \hfill {2012} \\
 {\bf RoboCup: Robotics Navigation Competition 2nd Place Award} (SEU, China) \hfill {2012}
 
 \end{rSection}
@@ -205,6 +212,7 @@ SIGGRAPH  \hfill{2018}
 \end{rSection}
 
 
+
 \begin{comment}
 \begin{rSection}{Relevant Course Work}
 \begin{longtable}{p{0.8 in}|p{4.5in}p{1 in}}
@@ -235,22 +243,6 @@ Assisted in teaching the Robotics and Computer Vision class under the supervisio
 
 \end{rSection}
 
-
-\begin{rSection}{Reference}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Kristin Dana &  Professor\\
- & Department of Electrical and Computer Engineering \\
- & Rutgers University\\ 
- & kdana@ece.rutgers.edu \\
-& \\
-Ko Nishino &  Professor  \\
- & Department of Computer Science \\
- & Drexel University\\ 
- & kon@drexel.edu\\
-\end{tabular}
-
-\end{rSection}
 \end{comment}
 
 \end{document}
