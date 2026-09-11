@@ -5,6 +5,7 @@
 \documentclass{resume} % Use the custom resume.cls style
 %\usepackage{hyperref}
 %\usepackage{geometry}
+\usepackage{charter} % Cleaner, more modern serif than default Computer Modern
 \usepackage{graphicx}
 \usepackage{listliketab}
 \usepackage{array}
@@ -14,6 +15,7 @@
 \usepackage{bibentry}
 \usepackage[table]{xcolor}
 \usepackage{xcolor,colortbl}
+\usepackage{fontawesome5}
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage[colorlinks = true,
@@ -27,9 +29,16 @@
 
 \name{Hang Zhang} % Your name
 
-\address{\includegraphics[scale=0.3]{phone_number.png}}
-\address{ zhanghang0704@gmail.com }
-\address{ \href{https://hangzhang.org/}{https://hangzhang.org/} }
+\address{
+  \faPhone\ \raisebox{-0.25em}{\includegraphics[scale=0.28]{phone_number.png}} \\
+  \faEnvelope\ \href{mailto:zhanghang0704@gmail.com}{zhanghang0704@gmail.com} \\
+  \faGlobe\ \href{https://hangzhang.org/}{hangzhang.org}
+}
+\address{
+  \faGithub\ \href{https://github.com/zhanghang1989}{zhanghang1989} \\
+  \faLinkedin\ \href{https://www.linkedin.com/in/zhanghang0704}{zhanghang0704} \\
+  \faGoogle\ \href{https://scholar.google.com/citations?user=gCoWdkUAAAAJ}{Google Scholar}
+}
 
 % \address{ zhang.hang@rutgers.edu \\ \url{http://hangzh.com}} % Your phone number and email
 
@@ -62,34 +71,32 @@ More about me: [\href{https://hangzhang.org/}{Homepage}] [\href{https://github.c
 
 \begin{rSubsection}{XPeng}{\em Dec 2024 - Now}{Senior Principal Engineer | Senior Director, Head of VLA Foundation Model}{Silicon Valley, CA}
 
-\item Head of the VLA Foundation Model team ($\sim$45 researchers and engineers across Silicon Valley and China) building \href{https://www.xpeng.com/pressroom/news/019cae5e67b99c0960ee8a028129016a}{XPeng VLA 2.0}, the pure-vision, end-to-end model behind XPeng's production driver-assistance system in 300+ Chinese cities, overseas vehicles, and Robotaxi; took it from research to production in about a year.
+\item Head of the VLA Foundation Model team ($\sim$45 researchers and engineers across Silicon Valley and China) building \href{https://www.xpeng.com/pressroom/news/019cae5e67b99c0960ee8a028129016a}{XPeng VLA 2.0}, the pure-vision, end-to-end model behind XPeng's production driver-assistance system in 300+ Chinese cities, overseas vehicles, and Robotaxi; took it from research to production in about a year, delivering three consecutive 2026 releases that roughly halved key safety and intervention metrics across highway, urban, and parking scenarios while raising VLA mileage penetration by over 50\%.
 
 \item Designed and led \textbf{\href{https://pandaily.com/xpeng-second-gen-vla-time}{Infini VLA}}, an industry-first streaming VLA architecture shipped in 2026: LLM-style long-sequence training with autoregressive streaming inference over a temporal KV cache, decoupling long-horizon memory from transient reaction on unchanged on-vehicle compute. Wrote the initial implementation and led training, optimization, and integration.
 
-\item Delivered three consecutive 2026 releases that roughly halved key safety and intervention metrics across highway, urban, and parking scenarios while raising VLA mileage penetration by over 50\%.
-
 % \item Scaled the training stack: million-token-context training, offline KV-cache materialization cutting post-training compute $\sim$100$\times$, and quantization-aware training for XPeng's in-house XP5 chips under real-time latency budgets.
 
-\item Led \href{https://arxiv.org/abs/2606.24253}{TuringViT} and the VLM base model: a linear-attention ViT with native dynamic-resolution pretraining that matches or beats SOTA open-source encoders with 10\% of the data at 2--3$\times$ lower high-resolution latency; now the unified visual foundation across XPeng driving, cockpit, and humanoid robotics. Advised \href{https://arxiv.org/abs/2608.30567}{TuringLLM} (20B-A2B MoE for physical AI) and \href{https://arxiv.org/abs/2606.28758}{X-Mind} (predictive world model as visual chain-of-thought for driving).
+\item Advised \href{https://arxiv.org/abs/2606.24253}{TuringViT} and the VLM base model, \href{https://arxiv.org/abs/2608.30567}{TuringLLM} (20B-A2B MoE for physical AI), and \href{https://arxiv.org/abs/2606.28758}{X-Mind} (predictive world model as visual chain-of-thought for driving).
 
-\item Defined the next-generation roadmap: a unified cloud teacher model distilled into platform-specific students, plus a VLM-driven data pipeline for automated labeling and hard-case mining.
+% \item Defined the next-generation roadmap: a unified cloud teacher model distilled into platform-specific students, plus a VLM-driven data pipeline for automated labeling and hard-case mining.
 
 \end{rSubsection}
 
 \begin{rSubsection}{Cruise AI}{\em Sep 2022 - Dec 2024}{Senior Staff Applied Research Scientist}{San Francisco, CA}
-\item Lead efforts in camera major model consolidation on object detection and segmentation in 2023. Leading efforts in building a multitask, multiview, multimodality, multiframe, and multiplatform model in Perception.
-\item Lead the development of the Perception model training pipeline, which supports various projects on detection \& segmentation, longtailed understanding, lane detection, off-board foundation model, and online distillation.
+\item Led efforts in camera major model consolidation on object detection and segmentation in 2023. Led efforts in building a multitask, multiview, multimodality, multiframe, and multiplatform model in Perception.
+\item Led the development of the Perception model training pipeline, which supports various projects on detection \& segmentation, longtailed understanding, lane detection, off-board foundation model, and online distillation.
 \end{rSubsection}
 
 \begin{rSubsection}{Meta Reality Lab (Facebook)}{\em Oct 2020 - Aug 2022}{Research Scientist}{Menlo Park, CA} %\RNum{2} 
-\item Lead the development of FBNAS project, a unified pipeline for cross-platform hardware-aware model optimization. FBNAS has been applied to several production models in person understanding on IG, AR/VR applications, and Ads models.
+\item Led the development of FBNAS project, a unified pipeline for cross-platform hardware-aware model optimization. FBNAS has been applied to several production models in person understanding on IG, AR/VR applications, and Ads models.
 \item Developed and open sourced D2Go toolkit, bringing Detectron2 to mobile [\href{https://ai.facebook.com/blog/d2go-brings-detectron2-to-mobile/}{post}]
 \item Research on Open Vocabulary segmentation and efficient architectures, e.g. \href{https://openaccess.thecvf.com/content/CVPR2023/papers/Liang_Open-Vocabulary_Semantic_Segmentation_With_Mask-Adapted_CLIP_CVPR_2023_paper.pdf}{OV-Seg}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&sortby=pubdate&citation_for_view=gCoWdkUAAAAJ:ML0RJ9NH7IQC}{FBNetV5}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&sortby=pubdate&citation_for_view=gCoWdkUAAAAJ:p__nRnzSRKYC}{ScaleViT}. Co-organized workshop on ``Computer Vision for MetaVerse" in ECCV2022.
 \end{rSubsection}
 
 \begin{rSubsection}{Amazon AWS AI}{\em Jan 2018 - Oct 2020}{Senior Applied Scientist}{East Palo Alto, CA} %\RNum{2} 
-\item Lead the development of GluonCV toolkit [\href{https://cv.gluon.ai/contents.html}{link}] and AutoGluon toolkit (for AutoML) [\href{https://auto.gluon.ai/stable/index.html}{link}]. 
-\item Lead research on large scale vision solution, e.g. \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&citation_for_view=gCoWdkUAAAAJ:0KyAp5RtaNEC}{ResNeSt}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&citation_for_view=gCoWdkUAAAAJ:fEOibwPWpKIC}{Bag-of-tricks}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&citation_for_view=gCoWdkUAAAAJ:-_dYPAW6P2MC}{CFNet}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&sortby=pubdate&citation_for_view=gCoWdkUAAAAJ:35r97b3x0nAC}{dynamic SGD}. 
+\item Led the development of GluonCV toolkit [\href{https://cv.gluon.ai/contents.html}{link}] and AutoGluon toolkit (for AutoML) [\href{https://auto.gluon.ai/stable/index.html}{link}].
+\item Led research on large scale vision solution, e.g. \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&citation_for_view=gCoWdkUAAAAJ:0KyAp5RtaNEC}{ResNeSt}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&citation_for_view=gCoWdkUAAAAJ:fEOibwPWpKIC}{Bag-of-tricks}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&citation_for_view=gCoWdkUAAAAJ:-_dYPAW6P2MC}{CFNet}, \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gCoWdkUAAAAJ&sortby=pubdate&citation_for_view=gCoWdkUAAAAJ:35r97b3x0nAC}{dynamic SGD}.
 \item Organized 3 tutorials on \href{https://iccv2019.thecvf.com/program/tutorials}{ICCV19}, \href{http://hangzhang.org/CVPR2020/}{CVPR20} and \href{https://hangzhang.org/ECCV2020/}{ECCV20}. 
 \end{rSubsection}
 
