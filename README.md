@@ -1,6 +1,19 @@
 # Real-time Latex PDF Preview (Overleaf + GitHub)
 Created by [Hang Zhang](https://hangzhang.org/).
 
+## Two-page industry resume
+
+- `cvHangZhang.tex` / `cvHangZhang.pdf`: OpenAI-oriented summary emphasizing multimodal foundation models, VLA, physical AI, and long-context architectures.
+- `my.bib` retains the full bibliography; the resume shows eight selected research contributions and links to Google Scholar.
+
+Build the resume from the repository root with Tectonic (downloads standard LaTeX dependencies on first use):
+
+```sh
+tectonic cvHangZhang.tex
+```
+
+The source also supports the repository's existing pdfLaTeX build workflow.
+
 [[PDF](https://hangzhang.org/cvHangZhang/cvHangZhang.pdf), [Overleaf](https://www.overleaf.com/read/vdftpkdcbhhx)]
 
 
@@ -23,6 +36,5 @@ You can easily modify the files and push it to GitHub using the built-in sync fe
 You may also send a pull request to this project, you can download the preview pdf from GitHub action.
 
 ![](./fig/pull_request.png)
-
 
 

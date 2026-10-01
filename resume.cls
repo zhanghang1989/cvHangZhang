@@ -67,18 +67,16 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\MakeUppercase{\namesize \@name}}\hfil
-    \nameskip\break
+    \centering{\MakeUppercase{\namesize \@name}}\par
   \endgroup
+  \nameskip
 }
 
 %----------------------------------------------------------------------------------------
 %	PRINT THE HEADING LINES
 %----------------------------------------------------------------------------------------
 
-\let\ori@document=\document
-\renewcommand{\document}{
-  \ori@document  % Begin document
+\AddToHook{begindocument/end}{
   \printname % Print the name specified with \name
   \@ifundefined{@addressone}{}{ % Print the first address if specified
     \printaddress{\@addressone}}
